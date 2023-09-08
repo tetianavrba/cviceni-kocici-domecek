@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -18,6 +19,7 @@ h1 {
 }
 
 .domecek {
+  position: relative;
   margin: 50px auto;
   width: 700px;
   height: 400px;
@@ -32,6 +34,8 @@ h1 {
 }
 
 .dopis {
+  position: absolute;
+  bottom: 0;
   width: 84px;
   height: 150px;
   /*
@@ -43,6 +47,9 @@ h1 {
 .motyl {
   width: 170px;
   height: 118px;
+  position: absolute;
+  top: calc(50% - 118px / 2);
+  left: calc(50% - 170px / 2);
   /*
 		kočka nejraději honí motýly přesně
 		uprostřed domečku, protože tam má na
@@ -51,6 +58,9 @@ h1 {
 }
 
 .kniha {
+  position: absolute;
+  top: calc(-140px / 2);
+  left: calc(-120px / 2);
   width: 120px;
   height: 140px;
   /*
@@ -59,10 +69,14 @@ h1 {
 		ale nejraději tak, aby v rohu domečku
 		nebyl její levý horní roh, ale její střed
 		(tj. vyčuhuje z domečku ven)
+    
 	*/
 }
 
 .sluchatka {
+  position: absolute;
+  top: 30px;
+  right: 30px;
   width: 124px;
   height: 150px;
   /*
@@ -75,6 +89,9 @@ h1 {
 }
 
 .spanek {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   width: 154px;
   height: 75px;
   /*
